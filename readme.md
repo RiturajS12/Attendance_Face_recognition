@@ -22,8 +22,8 @@ This project implements a Face Recognition Attendance System using OpenCV, allow
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/FaceRecognitionAttendanceSystem.git
-    cd FaceRecognitionAttendanceSystem
+    git clone https://github.com/RiturajS12/Attendance_Face_recognition.git
+    cd Attendance_Face_recognition
     ```
 
 2. Install the required packages:
@@ -31,33 +31,16 @@ This project implements a Face Recognition Attendance System using OpenCV, allow
     pip install opencv-python opencv-python-headless numpy pandas
     ```
 
-## Usage
-
-1. **Database Setup**: Set up your database to store attendance logs. You can use the provided `database_setup.py` file (if included) or manually create a table to store the attendance data.
-
-2. **Train the System**: Run the `train_model.py` file to capture images of faces for training. This will generate feature data required for recognition.
-
-3. **Run the Attendance System**: Execute the main script:
-    ```bash
-    python attendance_system.py
-    ```
-   This script will access the camera feed and automatically recognize and mark attendance for individuals already in the database.
-
-4. **View Attendance Records**: Use the `view_attendance.py` script to display attendance logs in the terminal or export them as a CSV file.
-
 ## Project Structure
 
-- `train_model.py`: Script to capture images and train the recognition model.
-- `attendance_system.py`: Main script to run the attendance system.
-- `view_attendance.py`: Script to view or export attendance logs.
-- `data/`: Contains trained face data and attendance logs.
-- `models/`: Stores the trained face recognition model.
+- `video cam.ipynb`: Script to capture images and train the recognition model.
+- `attendance.csv`: Script to view or export attendance logs.
+- `Images/`: Contains trained face data and attendance logs.
 - `README.md`: Project documentation.
 
 ## Customization
 
-- Adjust face detection parameters in `attendance_system.py` to improve recognition accuracy.
-- Modify database configurations in `database_config.py` (if included) to fit your preferred setup.
+- Adjust face detection parameters in `video_cam.ipynb` to improve recognition accuracy.
 
 ## Contributing
 
